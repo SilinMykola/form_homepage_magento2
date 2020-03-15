@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="NSilin_Form::formdata" title="NSilin Form" sortOrder="51">
+                    <resource id="NSilin_Form::formDataGrid" title="Form Data Grid" sortOrder="10">
+                        <resource id="NSilin_Form::formDataGrid_new" title="Form Data Save" sortOrder="10" />
+                        <resource id="NSilin_Form::formDataGrid_save" title="Form Data Save" sortOrder="20" />
+                        <resource id="NSilin_Form::formDataGrid_edit" title="Form Data Edit" sortOrder="30" />
+                        <resource id="NSilin_Form::formDataGrid_delete" title="Form Data Delete" sortOrder="40" />
+                        <resource id="NSilin_Form::formDataGrid_massDelete" title="Form Data Mass Delete" sortOrder="50" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

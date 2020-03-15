@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="NSilin_Form::formdata" title="NSilin Form" module="NSilin_Form" sortOrder="51" resource="NSilin_Form::formdata"/>
+        <add id="NSilin_Form::formDataGrid" title="Form Data Grid" module="NSilin_Form" sortOrder="10" action="nsilin_formdata/formdata/index" resource="NSilin_Form::formDataGrid" parent="NSilin_Form::formdata"/>
+    </menu>
+</config>

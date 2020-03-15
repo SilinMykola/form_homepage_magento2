@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<page layout="form-layout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Site Title</title>
+        <css src="NSilin_Form::css/form.css"/>
+    </head>
+    <referenceBlock name="content">
+        <container name="new-content" htmlTag="div" htmlClass="new-content">
+            <block class="NSilin\Form\Block\Form" name="form.block" template="NSilin_Form::form.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="types" xsi:type="array"/>
+                        <item name="components" xsi:type="array">
+                            <item name="formdata-component" xsi:type="array">
+                                <item name="component" xsi:type="string">NSilin_Form/js/form</item>
+                                <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">NSilin_Form/form</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </container>
+    </referenceBlock>
+    <referenceBlock name="page.main.title" remove="true"/>
+    <referenceBlock name="cms_page" remove="true"/>
+</page>

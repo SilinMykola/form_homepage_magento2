@@ -1,0 +1,39 @@
+.new-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-title {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(203,253,249);
+    border: 2px solid black;
+}
+.form-info-wrapper {
+    display: flex;
+}
+.form-info-wrapper input {
+    margin: 20px;
+}
+.form-body {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.test-form .fieldset {
+    margin-bottom: 0px;
+}
+.test-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.test-form .form-actions .clear-button {
+    margin-left: 20px;
+}
+.test-form .form-actions .submit-button {
+    margin-right: 20px;
+}
+.random-checkbox-wrapper {
+    padding-right: 175px;
+}

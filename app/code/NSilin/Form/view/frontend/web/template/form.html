@@ -1,0 +1,37 @@
+<form class="form test-form" action="/nsilin/submit/index">
+    <fieldset class="fieldset">
+        <div class="form-info-wrapper">
+            <input class="input-name required" type="text" data-bind="attr:{placeholder: $t('Name')} "/>
+            <input class="input-email required" type="text" data-bind="attr:{placeholder: $t('Email')} "/>
+        </div>
+        <div class="form-info-wrapper">
+            <input class="input-phone required" type="text" data-bind="attr:{placeholder: $t('Phone')} ">
+            <input class="input-address required" type="text" data-bind="attr:{placeholder: $t('Address')} ">
+        </div>
+        <div class="form-info-wrapper">
+            <div class="random-checkbox-wrapper">
+                <input id="form-checkbox" type="checkbox" data-bind="attr: {checked: randomCheck()}">
+                <label for="form-checkbox">Random check</label>
+            </div>
+            <div class="country-select-wrapper">
+                <select name="country" type="select" data-bind="options: getCountryData(),
+                                                                optionsText: 'countryName',
+                                                                optionsValue: 'countryCode'"></select>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-actions">
+        <div class="clear-button">
+            <button type="submit" class="clear-button"
+                    data-bind="click: clearFormData">
+                <span data-bind="i18n: 'Clear'"></span>
+            </button>
+        </div>
+        <div class="submit-button">
+            <button type="submit" class="submit-button"
+                    data-bind="click: submit">
+                <span data-bind="i18n: 'Submit'"></span>
+            </button>
+        </div>
+    </div>
+</form>

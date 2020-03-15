@@ -1,0 +1,14 @@
+<div class="form-title">
+    <p>Form Title</p>
+</div>
+<div class="form-body" data-bind="scope: 'formdata-component'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*":
+         {
+            "Magento_Ui/js/core/app":  <?php /* @escapeNotVerified */ echo $block->getJsLayout();?>
+         }
+    }
+</script>
